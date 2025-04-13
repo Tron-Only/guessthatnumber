@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+input {
+  min-width: 140px;
+  border: 1px solid hsl(0, 0%, 64%);
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: hsl(180, 90%, 43%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.submit:hover {
+  background-color: hsl(180, 90%, 33%);
+}
+
+.submit:active {
+  background-color: hsl(180, 90%, 23%);
+}
+
+.restart {
+  background-color: hsl(0, 93%, 64%);
+}
+
+.restart:hover {
+  background-color: hsl(0, 93%, 54%);
+}
+
+.restart:active {
+  background-color: hsl(0, 93%, 44%);
+}
+
+.redText {
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.greenText {
+  color: green;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.blueText {
+  color: aquamarine;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.tomatoText {
+  color: tomato;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#feedback {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.shake {
+  animation: shake 0.25s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
